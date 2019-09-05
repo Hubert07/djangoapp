@@ -1,0 +1,2 @@
+# djangoapp
+Repozytorium pod Pycharm
