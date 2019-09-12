@@ -1,0 +1,9 @@
+django-admin.py startproject <nazwa projektu>
+
+w pliku settings.py są wszystkie globalne ustawienia (strefa czasowa, język)
+    jak dodajemy jakąś aplikacje to umieszczamy ją w pliku settings.py w installed apps:
+        <nazwa aplikacji>.apps.i taka nazwa funkcji z folderu apps.py
+
+python manage.py startapp <nazwa aplikacji> tworzy aplikację
+
+source <katalog w którym jest venw>/venv/bin/activate
