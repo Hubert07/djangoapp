@@ -16,5 +16,5 @@ class Pizza(models.Model):
     cena =  models.DecimalField(max_digits=5, decimal_places=2)
 
 
-class Skladniki(models.Model):
-    pizza = models.ForeignKey()
+# class Skladniki(models.Model):
+    # pizza = models.ForeignKey()
