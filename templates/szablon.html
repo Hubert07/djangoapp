@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tytul %}Tytuł roboczy{% endblock tytul %}</title>
+</head>
+<body>
+    <h1>{% block naglowek %}Nagłówek boży{% endblock naglowek %}</h1>
+
+    {% block message %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endblock message %}
+
+    {% block tresc %}
+    {% endblock tresc %}
+
+
+</body>
+</html>
