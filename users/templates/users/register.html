@@ -1,0 +1,12 @@
+{% extends 'szablon.html' %}
+{% block naglowek %}Użytkownicy – Logowanie{% endblock naglowek %}
+{% block tresc %}
+    {% if user.is_authenticated %}
+        <p>Już się zalogowałeś {{ user.username }} no</p>
+    {% else %}
+        <form action="." method="POST"></form>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Zarejestruj</button>
+    {% endif %}
+{% endblock tresc %}
