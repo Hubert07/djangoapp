@@ -12,7 +12,7 @@ class Uczelnia(models.Model):
         verbose_name_plural = "uczelnie"
 
 class Miasto(models.Model):
-    nazwa = models.CharField(verbose_name='miasto', max_length=30, default='Warszawa')
+    nazwa = models.CharField(verbose_name='miasto', max_length=30)
     kod = models.CharField(max_length=6, help_text="Wpisz kod pocztowy")
 
     def __str__(self):

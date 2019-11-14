@@ -1,7 +1,6 @@
 {% extends 'szablon.html' %}
 {% block tytul %}Uczelnie{% endblock tytul %}
-<body>
-    <h1>Uczelnie</h1>
+{% block tresc %}
 
 <h2>Dodaj uczelnię</h2>
     <form action="." method="POST">
@@ -17,5 +16,5 @@
     {% endfor %}
 </ol>
 
-</body>
-</html>
+
+{% endblock tresc %}
